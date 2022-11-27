@@ -22,8 +22,8 @@ public class JedisDemo1 {
     @Test
     public void demo5() {
         //创建Jedis对象
-        Jedis jedis = new Jedis("192.168.184.128",6666);
-
+        Jedis jedis = new Jedis("120.27.241.165",6666);
+        System.out.println("git更改后");
         jedis.zadd("china",100d,"shanghai");
 
         Set<String> china = jedis.zrange("china", 0, -1);
