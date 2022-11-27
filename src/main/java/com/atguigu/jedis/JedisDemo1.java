@@ -23,7 +23,7 @@ public class JedisDemo1 {
     public void demo5() {
         //创建Jedis对象
         Jedis jedis = new Jedis("120.27.241.165",6666);
-        System.out.println("git更改后");
+        System.out.println("git更改后"+"hot-fix");
         jedis.zadd("china",100d,"shanghai");
 
         Set<String> china = jedis.zrange("china", 0, -1);
